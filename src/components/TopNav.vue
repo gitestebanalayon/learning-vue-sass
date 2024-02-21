@@ -13,11 +13,5 @@
 </template>
 
 <style lang="scss" scoped>
-    @import '../assets/sass/partials/variables';
-    @import '../assets/sass/partials/mixings';
-    .nav-top{
-        @include flex-justify-between;
-        width: 100%;
-        height: $em-primary;
-    }
+    @import '../assets/sass/index.scss';
 </style>

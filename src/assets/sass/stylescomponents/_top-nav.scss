@@ -1,0 +1,101 @@
+/*---NAV TOP GLOBAL---*/
+.nav-top-global{
+    @include flex-aling-center;
+    background: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+    border: $app-border;
+    box-shadow: 0px 2px 3px rgb(231, 231, 231);
+    padding: 0 0.625em 0 4.375em;
+    width: 100%;
+    height: 3.75em;
+    z-index: 10;
+    font-size: $app-font-size;
+}
+
+/*---NAV TOP DIV---*/
+.nav-top{
+    @include flex-justify-between;
+    width: 100%;
+    height: $em-primary;
+}
+
+/*---NAV TOP DIV LEFT---*/
+.nav-left{
+    height: 100%;
+    .row{
+        @include flex-aling-center;
+        height: 100%;
+        .col{
+            @include flex-aling-center;
+            height: 100%;
+            position: relative;
+            .input{
+                border: $app-border;
+                border-radius: $app-border-radius;
+                outline: none;
+                height: 100%;
+                padding: 0 $em-primary 0 0.5em;
+                font-size: 1em;
+                font-family: $app-font;
+                color: $app-color-black;
+                transition: $transition-primary;
+            }
+            .input:focus{
+                border: 1px solid rgb(130, 174, 255)
+            }
+            .button{
+                position: absolute;
+                top: 0;
+                right: 0;
+                background: rgba(255, 255, 255, 0);
+                font-size: $app-font-size;
+                color: $app-color-black;
+                border: none;
+                width: $em-primary;
+                height: 100%;
+                z-index: 1;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+/*---NAV TOP DIV RIGHT---*/
+.nav-right{
+    height: 100%;
+    .row{
+        @include flex-aling-center;
+        gap: 1em;
+        height: 100%;
+        .col{
+            @include flex-justify-center;
+            height: 100%;
+            position: relative;
+            .icon{
+                font-size: $app-font-size;
+                background: rgba(255, 255, 255, 0);
+                border: none;
+                cursor: pointer;
+            }
+            .bell{
+                position: absolute;
+                top: 4px;
+                right: -4px;
+                background: red;
+                padding: 0 2px;
+                border-radius: $app-border-radius;
+                color: #fff;
+                font-size: 10px;
+                font-weight: 700;
+            }
+        }
+        .col:nth-child(2) .icon{
+            border: $app-border;
+            height: 100%;
+            width: $em-primary;
+            border-radius: 50%;
+        }
+    }
+}
