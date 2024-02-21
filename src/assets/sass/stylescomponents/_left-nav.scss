@@ -1,0 +1,69 @@
+.nav-left-global{
+    position: fixed;
+    z-index: 10;
+    background: $app-color-white;
+    height: 100%;
+    width: 15.625em;
+    border-right: $app-border;
+    box-shadow: 2px 0px 3px $shadow;
+    overflow: hidden;
+    width: 3.75em;
+}
+
+.nav-menu-left{
+    height: 3.75em;
+    border-bottom: $app-border;
+    .logo{
+        position: relative;
+        padding: 0 0.5em;
+        height: 100%;
+        cursor: pointer;
+        @include flex-aling-center;
+        color: $app-color-black;
+
+        i{
+            width: 2.8125em;
+            text-align: center;
+            position: absolute;
+        }
+
+        h1{
+            position: absolute;
+            margin-left: 3.3em;
+            font-size: 1em;
+        }
+    }
+    .options{
+        display: flex;
+        flex-direction: column;
+        gap: 0.5em;
+        padding: 0.5em;
+        list-style: none;
+        li{
+            a{
+                position: relative;
+                width: 100%;
+                text-decoration: none;
+                @include flex-aling-center;
+                border-radius: $app-border-radius;
+                height: 2.8125em;
+                color: $app-color-black;
+                transition: $transition-primary;
+                i{
+                    width: 2.8125em;
+                    text-align: center;
+                    position: absolute;
+                }
+                p{
+                    position: absolute;
+                    margin-left: 3.3em;
+                }
+            }
+            a:hover{
+                background: $app-color-blue;
+                color: #fff;
+            }
+        }
+    }
+}
+
