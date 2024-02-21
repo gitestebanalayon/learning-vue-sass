@@ -3,11 +3,15 @@
     z-index: 10;
     background: $app-color-white;
     height: 100%;
-    width: 15.625em;
+    width: 3.75em;
     border-right: $app-border;
     box-shadow: 2px 0px 3px $shadow;
     overflow: hidden;
-    width: 3.75em;
+    transition: $transition-primary;
+}
+
+.nav-left-global__active{
+    width: 15.625em;
 }
 
 .nav-menu-left{
