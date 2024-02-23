@@ -10,7 +10,7 @@
                 <span class="bell">5</span>
             </div>
             <div class="col">
-                <button class="icon fas fa-user"></button>
+                <img src="../../../assets/img/esteban.jpg" alt="picture">
             </div>
         </div>
     </div>
@@ -18,5 +18,4 @@
 
 <style lang="scss" scoped>
     @import '../../../assets/sass/index.scss';
-    
 </style>

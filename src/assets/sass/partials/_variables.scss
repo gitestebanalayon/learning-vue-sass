@@ -1,14 +1,16 @@
-$app-font: arial;
+$app-font: roboto,arial;
 $app-font-size: 1em;
 
-$app-color-white: #ffffff;
-$app-color-black: rgb(73, 73, 73);
-$app-color-blue: #0073ff;
+$app-color-white: #f0f0f0;
+$app-color-black: rgb(44, 44, 44);
+$app-color-blue: #ebebeb;
+$app-color-options: #eaeaea;
+$app-color-focus: #659eff;
 
 $app-border: 1px solid #e7e7e7;
 $app-border-radius: 3px;
 
-$shadow: #e2e2e2;
+$shadow: #e9e9e9;
 
 $em-primary: 2.5em;
 

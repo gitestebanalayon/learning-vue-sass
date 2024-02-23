@@ -1,7 +1,10 @@
 <script setup>
     function openBars() {
-        const barsContainer = document.querySelector('.nav-left-global')
+        const barsContainer = document.querySelector('.nav-left-global');
+        const barsIcon = document.querySelector('.logo i');
+
         barsContainer.classList.toggle('nav-left-global__active');
+        barsIcon.classList.toggle('nav-left-icon__active');
     }
 </script>
 
